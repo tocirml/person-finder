@@ -4,9 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="styles.css" />
     <title>Person Finder</title>
   </head>
   <body>
-    Hello
+    <nav class="nav">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/SVGs/Logo.svg" alt="Company Logo" />
+          </a>
+        </div>
+        <div class="user-options">
+          <img src="assets/SVGs/icn_search.svg" alt="Search an email" />
+          <img src="assets/SVGs/icn_person.svg" alt="Login icon" />
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="spinner">
+        <div class="spinner-image">
+          <img src="assets/loading_spinner.gif" alt="Spinner" />
+        </div>
+        <div class="spinner-text">Please wait a moment...</div>
+      </section>
+      <section class="results">
+        <div class="results-numbers">
+          <span id="result-number">0</span>
+          Results
+        </div>
+        <div class="results-text">Try starting a new search below</div>
+      </section>
+      <section class="search search-again">
+        <h2>Can’t Find The Right Person?</h2>
+        <div class="search-description">
+          <span class="gold font-weight-bold">Try Again</span> - Make a new
+          search
+        </div>
+        <form action="results.html" class="search-form">
+          <div class="input-wrapper">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="search-form-email"
+              placeholder="EMAIL"
+            />
+            <div class="search-form-error">
+              Please add a valid email address
+            </div>
+          </div>
+          <input type="submit" class="search-form-submit" value="GO!" />
+        </form>
+        <div class="search-footer">
+          <img
+            class="search-footer-icon"
+            src="assets/SVGs/lock.svg"
+            alt="Lock Icon"
+          />
+          <p class="gold search-footer-text">
+            Enter Any Email Address. They won't be notified.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="footer-links">
+          <a href="#">Terms</a> | <a href="#">Privacy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="results.js"></script>
   </body>
 </html>

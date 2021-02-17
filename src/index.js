@@ -1,10 +1,19 @@
-const apiUrl = 'https://ltv-data-api.herokuapp.com/api/v1/records.json';
-let email = 'jonsmith@example.com';
+(function () {
+  const $submitButton = document.querySelector('.search-form-submit');
 
-const helloWorld = () => {
-  fetch(`${apiUrl}?email=${email}`).then((response) => {
-    console.log('Hello World', response);
+  $submitButton.addEventListener('click', (e) => {
+    if (!validateForm()) e.preventDefault();
   });
-};
 
-helloWorld();
+  const validateForm = () => {
+    const $email = document.querySelector('.search-form-email');
+    const re = /\S+@\S+\.\S+/;
+    if (re.test($email.value)) {
+      return true;
+    }
+    $email.classList.add('error');
+    const $error = document.querySelector('.search-form-error');
+    $error.style.display = 'block';
+    return false;
+  };
+})();

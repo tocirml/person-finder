@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Person Finder</title>
   </head>
   <body>
-    <main class="main">
+    <header class="header">
       <nav class="nav">
         <div class="nav-content">
           <div class="logo">
@@ -29,6 +29,8 @@
           </div>
         </div>
       </nav>
+    </header>
+    <main class="main">
       <section class="search">
         <h1>Search Any Email Address</h1>
         <div class="search-description">
@@ -36,7 +38,7 @@
           owner's name, photos and online profiles. See what you find!
         </div>
         <form action="results.html" class="search-form">
-          <div class="search-form-error">
+          <div class="input-wrapper">
             <input
               type="email"
               name="email"
@@ -44,6 +46,9 @@
               class="search-form-email"
               placeholder="EMAIL"
             />
+            <div class="search-form-error">
+              Please add a valid email address
+            </div>
           </div>
           <input type="submit" class="search-form-submit" value="GO!" />
         </form>
@@ -59,19 +64,79 @@
         </div>
       </section>
 
-      <section class="secondary-section"></section>
-      <footer class="footer">
+      <section class="secondary-section">
+        <h2>Reverse Email Lookup</h2>
+        <p class="secondary-section-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="secondary-section-boxes">
+          <div class="secondary-section-box">
+            <div class="box-number gold">1</div>
+            <div class="box-title">Lorem ipsum</div>
+            <div class="box-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="secondary-section-box">
+            <div class="box-number gold">2</div>
+            <div class="box-title">Lorem ipsum</div>
+            <div class="box-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="secondary-section-box">
+            <div class="box-number gold">3</div>
+            <div class="box-title">Lorem ipsum</div>
+            <div class="box-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="secondary-section-box">
+            <div class="box-number gold">4</div>
+            <div class="box-title">Lorem ipsum</div>
+            <div class="box-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="secondary-section-box">
+            <div class="box-number gold">5</div>
+            <div class="box-title">Lorem ipsum</div>
+            <div class="box-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="secondary-section-box">
+            <div class="box-number gold">6</div>
+            <div class="box-title">Lorem ipsum</div>
+            <div class="box-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
         <p class="footer-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          porta orci gravida, malesuada velit ac, viverra eros. Suspendisse at
-          ante dolor. Etiam mattis viverra elit id accumsan. Suspendisse a nulla
-          ligula. Donec imperdiet pellentesque ante. Phasellus ornare urna ex.
-          Etiam tristique quam ornare ex consectetur egestas nec id justo.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
         <div class="footer-links">
           <a href="#">Terms</a> | <a href="#">Privacy</a>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
