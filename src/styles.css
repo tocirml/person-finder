@@ -1,0 +1,177 @@
+/* To be honest I don't know how to use bootstrap, and normally I use SASS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.main {
+  display: grid;
+}
+
+/* -------------------NAV --------------------------*/
+
+.nav {
+  height: 65px;
+  background-color: #004a80;
+}
+
+.nav .nav-content {
+  margin: auto;
+  max-width: 1000px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-content .user-options img {
+  margin-right: 15px;
+}
+
+.nav .nav-content .logo {
+  margin-left: 15px;
+  width: 173px;
+}
+
+.nav .nav-content .logo img {
+  width: 100%;
+}
+
+/*--------------------SEARCH-------------------- */
+
+.search {
+  background-color: #004a80;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 29px;
+}
+
+.search h1 {
+  font-size: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.search-description {
+  font-weight: 300;
+  margin: auto 25px;
+}
+
+.search-form {
+  margin: 30px auto;
+}
+
+.search-form-error {
+  display: inline-block;
+}
+
+.search-form-email {
+  color: black;
+  width: 780px;
+  height: 70px;
+  padding: 22px 15px;
+  border: none;
+  box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.search-form-email::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  color: #9b9b9b;
+  letter-spacing: 2px;
+  line-height: 18px;
+}
+
+.search-form-submit {
+  margin-left: 15px;
+  width: 180px;
+  height: 70px;
+  border: none;
+  background-image: linear-gradient(225deg, #f2da56 0%, #f6bc25 100%);
+  box-shadow: 0 3px 0 0 #a6953b, inset 0 1px 0 0 #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #004a80;
+  letter-spacing: 1px;
+}
+
+.search-footer {
+  max-width: 960px;
+  margin: 30px auto 95px;
+  text-align: left;
+}
+
+.search-footer-text {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-form-email {
+    width: 518px;
+  }
+
+  .search-footer {
+    max-width: 710px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .search h1 {
+    font-size: 38px;
+    margin: 10px 15px;
+  }
+
+  .search-form {
+    margin: 18px auto;
+  }
+
+  .search-description {
+    font-size: 18px;
+  }
+
+  .search-form-email {
+    display: block;
+    width: 280px;
+    height: 50px;
+  }
+  .search-form-submit {
+    display: block;
+    margin: 10px auto;
+    height: 50px;
+    width: 280px;
+  }
+
+  .search-footer {
+    max-width: 280px;
+  }
+}
+
+/*------SECONDARY SECTION----------*/
+
+.secondary-section {
+  text-align: center;
+  padding: 40px 25px 30px;
+  background-image: linear-gradient(0deg, #e6e6e6 0%, #ffffff 100%);
+}
+
+.secondary-section-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/*------GENERAL----------*/
+
+.gold {
+  color: #f6bc25;
+}

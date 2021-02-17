@@ -11,10 +11,67 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
     <title>Person Finder</title>
   </head>
   <body>
-    <main class="main"></main>
-    <script src="index.js"></script>
+    <main class="main">
+      <nav class="nav">
+        <div class="nav-content">
+          <div class="logo">
+            <a href="#">
+              <img src="assets/SVGs/Logo.svg" alt="Company Logo" />
+            </a>
+          </div>
+          <div class="user-options">
+            <img src="assets/SVGs/icn_search.svg" alt="Search an email" />
+            <img src="assets/SVGs/icn_person.svg" alt="Login icon" />
+          </div>
+        </div>
+      </nav>
+      <section class="search">
+        <h1>Search Any Email Address</h1>
+        <div class="search-description">
+          <span class="gold font-weight-bold">Start Here</span> - Look up the
+          owner's name, photos and online profiles. See what you find!
+        </div>
+        <form action="results.html" class="search-form">
+          <div class="search-form-error">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="search-form-email"
+              placeholder="EMAIL"
+            />
+          </div>
+          <input type="submit" class="search-form-submit" value="GO!" />
+        </form>
+        <div class="search-footer">
+          <img
+            class="search-footer-icon"
+            src="assets/SVGs/lock.svg"
+            alt="Lock Icon"
+          />
+          <p class="gold search-footer-text">
+            Enter Any Email Address. They won't be notified.
+          </p>
+        </div>
+      </section>
+
+      <section class="secondary-section"></section>
+      <footer class="footer">
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          porta orci gravida, malesuada velit ac, viverra eros. Suspendisse at
+          ante dolor. Etiam mattis viverra elit id accumsan. Suspendisse a nulla
+          ligula. Donec imperdiet pellentesque ante. Phasellus ornare urna ex.
+          Etiam tristique quam ornare ex consectetur egestas nec id justo.
+        </p>
+        <div class="footer-links">
+          <a href="#">Terms</a> | <a href="#">Privacy</a>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
