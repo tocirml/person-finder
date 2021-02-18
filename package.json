@@ -4,7 +4,7 @@
   "description": "Find any person by email",
   "main": "src/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "author": "Roberto Muñoz",
   "license": "ISC"
