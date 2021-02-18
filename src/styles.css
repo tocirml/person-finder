@@ -1,4 +1,8 @@
 /* To be honest I don't know how to use bootstrap, and normally I use SASS */
+/* This ended up as a pretty large file, but didnt really wanted to create a big file structure either  */
+/* Also, I used different techniques like flex, grid, media queries, in order to match the mockup and make the app responsive  */
+/* I tested as much as I could, and tried to match every detail, hopefully the result is not as far from expected */
+/* Something that didnt work for me was the Helvetica Neue font, I think installation was needed in order to see it, but I think on MacOS should be there */
 
 * {
   margin: 0;
@@ -22,8 +26,6 @@ body {
 }
 
 .main {
-  /* padding-bottom: 68px; */
-  /* position: relative; */
   height: 100%;
   display: grid;
   grid-template-rows: auto;
@@ -227,11 +229,6 @@ body {
 .search-again {
   display: none;
   padding-top: 100px;
-  /* height: 454px; */
-  /* width: 100%;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 68px; */
 }
 
 .search-again h2 {
@@ -588,6 +585,7 @@ body {
     padding: 7px 0;
   }
 }
+
 /*------GENERAL----------*/
 
 .gold {

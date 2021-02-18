@@ -1,3 +1,5 @@
+//I found this code, while fiding how to run a simple js app with Heroku, using express
+
 // create an express app
 const express = require('express');
 const app = express();
