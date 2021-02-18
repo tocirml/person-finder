@@ -1,0 +1,9 @@
+.main {
+  grid-template-rows: auto 450px;
+}
+
+@media screen and (max-width: 766px) {
+  body .main {
+    grid-template-rows: auto 390px;
+  }
+}
