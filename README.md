@@ -35,6 +35,10 @@ git clone https://github.com/tocirml/person-finder.git
 ```
 
 ```bash
+ cd person-finder
+```
+
+```bash
 npm install
 ```
 
